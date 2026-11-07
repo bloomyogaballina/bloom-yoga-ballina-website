@@ -1,0 +1,14 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+
+# Local and generated files
+.DS_Store
+node_modules/
+dist/
+coverage/
