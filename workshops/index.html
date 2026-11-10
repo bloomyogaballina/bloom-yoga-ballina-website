@@ -26,6 +26,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
 @keyframes drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion: reduce){.marquee{animation:none}}
 </style>
+<style>.ws-card{display:flex;flex-direction:column;gap:6px;height:100%;box-sizing:border-box;background:#F4EDE2;border:1.5px solid #F4EDE2;border-radius:2px;padding:28px 24px;color:#504D42;text-decoration:none;transition:border-color .15s ease,transform .15s ease}.ws-card:hover{border-color:#A94F2C;color:#504D42}.ws-card:focus-visible{outline:2px solid #504D42;outline-offset:2px}.ws-cta{margin-top:10px;font-size:16px;font-weight:500;color:#A94F2C;text-decoration:underline;text-underline-offset:4px}@media (prefers-reduced-motion: no-preference){.ws-card:hover{transform:translateY(-2px)}}</style>
 </head>
 <body>
 <div style="width:100%;background:#F4EDE2;color:#504D42;font-family:&quot;Avenir Next&quot;,&quot;DM Sans&quot;,system-ui,sans-serif;font-size:18px;line-height:1.6">
@@ -69,23 +70,59 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
         <p role="heading" aria-level="2" style="margin:0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:clamp(30px,3.4vw,40px);line-height:1.15;color:#A94F2C">Go deeper, one theme at a time.</p>
         <p style="margin:16px 0 0">Every fortnight, Selin runs a two-hour workshop that takes one part of the practice and explores it properly: breaking poses down, refining alignment and building towards each pose step by step. Workshops run on the first and third Sunday of each month, from 10:30 am to 12:30 pm.</p>
       </div>
-      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
-        <li style="background:#F4EDE2;border-radius:2px;padding:28px 24px;display:flex;flex-direction:column;gap:6px">
-          <span style="font-size:16px;font-weight:500">February 2027</span>
-          <span style="font-family:Georgia,&quot;Times New Roman&quot;,serif;font-size:28px;line-height:1.2;color:#A94F2C">Warriors Workshop</span>
-          <span style="font-size:16px;line-height:1.5">Sunday 7 and Sunday 21 February, 10:30 am – 12:30 pm</span>
-        </li>
-        <li style="background:#F4EDE2;border-radius:2px;padding:28px 24px;display:flex;flex-direction:column;gap:6px">
-          <span style="font-size:16px;font-weight:500">March 2027</span>
-          <span style="font-family:Georgia,&quot;Times New Roman&quot;,serif;font-size:28px;line-height:1.2;color:#A94F2C">Backbends Workshop</span>
-          <span style="font-size:16px;line-height:1.5">Sunday 7 and Sunday 21 March, 10:30 am – 12:30 pm</span>
-        </li>
-        <li style="background:#F4EDE2;border-radius:2px;padding:28px 24px;display:flex;flex-direction:column;gap:6px">
-          <span style="font-size:16px;font-weight:500">April 2027</span>
-          <span style="font-family:Georgia,&quot;Times New Roman&quot;,serif;font-size:28px;line-height:1.2;color:#A94F2C">Hip Openers Workshop</span>
-          <span style="font-size:16px;line-height:1.5">Sunday 4 and Sunday 18 April, 10:30 am – 12:30 pm</span>
-        </li>
-      </ul>
+      <div style="display:flex;flex-direction:column;gap:32px">
+        <div>
+          <h2 style="margin:0 0 12px;font-size:19px;font-weight:500;line-height:1.4;color:#504D42">February 2027</h2>
+          <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+            <li><a class="ws-card" href="mailto:selin@bloomyogaballina.com.au?subject=Workshop%20booking%3A%20Backbends%2C%20Sunday%207%20February%202027" data-momence-link="TODO Backbends Sunday 7 February" aria-label="Book the Backbends workshop, Sunday 7 February 2027, 10:30 am to 12:30 pm">
+              <span style="font-size:16px;font-weight:500">Sunday 7 February</span>
+              <span style="font-family:Georgia,&quot;Times New Roman&quot;,serif;font-size:28px;line-height:1.2;color:#A94F2C">Backbends Workshop</span>
+              <span style="font-size:16px;line-height:1.5">10:30 am – 12:30 pm</span>
+              <span class="ws-cta">Book this workshop <span aria-hidden="true">→</span></span>
+            </a></li>
+            <li><a class="ws-card" href="mailto:selin@bloomyogaballina.com.au?subject=Workshop%20booking%3A%20Warrior%20Poses%2C%20Sunday%2021%20February%202027" data-momence-link="TODO Warrior Poses Sunday 21 February" aria-label="Book the Warrior Poses workshop, Sunday 21 February 2027, 10:30 am to 12:30 pm">
+              <span style="font-size:16px;font-weight:500">Sunday 21 February</span>
+              <span style="font-family:Georgia,&quot;Times New Roman&quot;,serif;font-size:28px;line-height:1.2;color:#A94F2C">Warrior Poses Workshop</span>
+              <span style="font-size:16px;line-height:1.5">10:30 am – 12:30 pm</span>
+              <span class="ws-cta">Book this workshop <span aria-hidden="true">→</span></span>
+            </a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 style="margin:0 0 12px;font-size:19px;font-weight:500;line-height:1.4;color:#504D42">March 2027</h2>
+          <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+            <li><a class="ws-card" href="mailto:selin@bloomyogaballina.com.au?subject=Workshop%20booking%3A%20Forward%20Folds%2C%20Sunday%207%20March%202027" data-momence-link="TODO Forward Folds Sunday 7 March" aria-label="Book the Forward Folds workshop, Sunday 7 March 2027, 10:30 am to 12:30 pm">
+              <span style="font-size:16px;font-weight:500">Sunday 7 March</span>
+              <span style="font-family:Georgia,&quot;Times New Roman&quot;,serif;font-size:28px;line-height:1.2;color:#A94F2C">Forward Folds Workshop</span>
+              <span style="font-size:16px;line-height:1.5">10:30 am – 12:30 pm</span>
+              <span class="ws-cta">Book this workshop <span aria-hidden="true">→</span></span>
+            </a></li>
+            <li><a class="ws-card" href="mailto:selin@bloomyogaballina.com.au?subject=Workshop%20booking%3A%20Side%20Bends%2C%20Sunday%2021%20March%202027" data-momence-link="TODO Side Bends Sunday 21 March" aria-label="Book the Side Bends workshop, Sunday 21 March 2027, 10:30 am to 12:30 pm">
+              <span style="font-size:16px;font-weight:500">Sunday 21 March</span>
+              <span style="font-family:Georgia,&quot;Times New Roman&quot;,serif;font-size:28px;line-height:1.2;color:#A94F2C">Side Bends Workshop</span>
+              <span style="font-size:16px;line-height:1.5">10:30 am – 12:30 pm</span>
+              <span class="ws-cta">Book this workshop <span aria-hidden="true">→</span></span>
+            </a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 style="margin:0 0 12px;font-size:19px;font-weight:500;line-height:1.4;color:#504D42">April 2027</h2>
+          <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+            <li><a class="ws-card" href="mailto:selin@bloomyogaballina.com.au?subject=Workshop%20booking%3A%20Hip%20Openers%2C%20Sunday%204%20April%202027" data-momence-link="TODO Hip Openers Sunday 4 April" aria-label="Book the Hip Openers workshop, Sunday 4 April 2027, 10:30 am to 12:30 pm">
+              <span style="font-size:16px;font-weight:500">Sunday 4 April</span>
+              <span style="font-family:Georgia,&quot;Times New Roman&quot;,serif;font-size:28px;line-height:1.2;color:#A94F2C">Hip Openers Workshop</span>
+              <span style="font-size:16px;line-height:1.5">10:30 am – 12:30 pm</span>
+              <span class="ws-cta">Book this workshop <span aria-hidden="true">→</span></span>
+            </a></li>
+            <li><a class="ws-card" href="mailto:selin@bloomyogaballina.com.au?subject=Workshop%20booking%3A%20Shoulder%20Openers%2C%20Sunday%2018%20April%202027" data-momence-link="TODO Shoulder Openers Sunday 18 April" aria-label="Book the Shoulder Openers workshop, Sunday 18 April 2027, 10:30 am to 12:30 pm">
+              <span style="font-size:16px;font-weight:500">Sunday 18 April</span>
+              <span style="font-family:Georgia,&quot;Times New Roman&quot;,serif;font-size:28px;line-height:1.2;color:#A94F2C">Shoulder Openers Workshop</span>
+              <span style="font-size:16px;line-height:1.5">10:30 am – 12:30 pm</span>
+              <span class="ws-cta">Book this workshop <span aria-hidden="true">→</span></span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
       <div style="display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between;border-top:1px solid #A94F2C;padding-top:24px">
         <p style="margin:0;font-size:18px"><span style="font-weight:500">Members $30</span> · <span style="font-weight:500">Non-members $40</span> · 2 hours · Limited to 6 people</p>
         <a class="btn btn-primary" href="mailto:selin@bloomyogaballina.com.au?subject=Workshop%20booking">Book a Workshop</a>
