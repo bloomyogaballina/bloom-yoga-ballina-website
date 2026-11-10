@@ -26,6 +26,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
 @keyframes drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion: reduce){.marquee{animation:none}}
 </style>
+<style>.post-card{display:flex;flex-direction:column;gap:10px;height:100%;box-sizing:border-box;background:#F4EDE2;border:1.5px solid #F4EDE2;border-radius:2px;padding:16px 16px 24px;color:#504D42;text-decoration:none;transition:border-color .15s ease}.post-card:hover{border-color:#A94F2C;color:#504D42}.post-card:focus-visible{outline:2px solid #504D42;outline-offset:2px}.post-more{margin-top:auto;font-weight:500;color:#A94F2C;text-decoration:underline;text-underline-offset:4px}</style>
 </head>
 <body>
 <div style="width:100%;background:#F4EDE2;color:#504D42;font-family:&quot;Avenir Next&quot;,&quot;DM Sans&quot;,system-ui,sans-serif;font-size:18px;line-height:1.6">
@@ -68,29 +69,33 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
       <div style="max-width:40em">
         <h1 style="margin:0 0 12px;font-size:19px;font-weight:500;letter-spacing:0.01em;color:#504D42">Blog</h1>
         <p role="heading" aria-level="2" style="margin:0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:clamp(30px,3.4vw,40px);line-height:1.15;color:#A94F2C">Notes from the mat.</p>
-        <p style="margin:16px 0 0">Thoughts from Selin on yoga, movement and feeling at home in your body at every age. New posts are on their way.</p>
+        <p style="margin:16px 0 0">Thoughts from Selin on yoga, movement and feeling at home in your body at every age.</p>
       </div>
       <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
-        <li style="background:#F4EDE2;border-radius:2px;padding:28px 24px;display:flex;flex-direction:column;gap:10px">
-          <span style="font-size:15px;font-weight:500;color:#504D42">Coming soon</span>
+        <li><a class="post-card" href="/blog/yoga-as-we-age/">
+          <img src="/images/class-childs-pose.webp" alt="" style="display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:2px">
           <h2 style="margin:0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:26px;line-height:1.25;color:#A94F2C">Why is yoga so important as we age?</h2>
-          <span style="font-size:16px;line-height:1.5">By Selin</span>
-        </li>
-        <li style="background:#F4EDE2;border-radius:2px;padding:28px 24px;display:flex;flex-direction:column;gap:10px">
-          <span style="font-size:15px;font-weight:500;color:#504D42">Coming soon</span>
-          <h2 style="margin:0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:26px;line-height:1.25;color:#A94F2C">Yoga as my main anti-ageing tool</h2>
-          <span style="font-size:16px;line-height:1.5">By Selin</span>
-        </li>
-        <li style="background:#F4EDE2;border-radius:2px;padding:28px 24px;display:flex;flex-direction:column;gap:10px">
-          <span style="font-size:15px;font-weight:500;color:#504D42">Coming soon</span>
+          <span style="font-size:16px;line-height:1.5">How a regular yoga practice can help you stay strong, steady and comfortable in your body through every decade.</span>
+          <span class="post-more">Read more <span aria-hidden="true">→</span></span>
+        </a></li>
+        <li><a class="post-card" href="/blog/yoga-anti-aging/">
+          <img src="/images/selin-bridge-bali.webp" alt="" style="display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:2px">
+          <h2 style="margin:0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:26px;line-height:1.25;color:#A94F2C">Yoga as my main anti-aging tool</h2>
+          <span style="font-size:16px;line-height:1.5">Selin on the daily practice she has kept for more than 15 years, and why it is the habit she would never give up.</span>
+          <span class="post-more">Read more <span aria-hidden="true">→</span></span>
+        </a></li>
+        <li><a class="post-card" href="/blog/mobility/">
+          <img src="/images/river-bridge.webp" alt="" style="display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:2px">
           <h2 style="margin:0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:26px;line-height:1.25;color:#A94F2C">How mobility supports you</h2>
-          <span style="font-size:16px;line-height:1.5">By Selin</span>
-        </li>
-        <li style="background:#F4EDE2;border-radius:2px;padding:28px 24px;display:flex;flex-direction:column;gap:10px">
-          <span style="font-size:15px;font-weight:500;color:#504D42">Coming soon</span>
+          <span style="font-size:16px;line-height:1.5">What mobility really means, why it is different from flexibility, and how a little regular movement keeps everyday life easier.</span>
+          <span class="post-more">Read more <span aria-hidden="true">→</span></span>
+        </a></li>
+        <li><a class="post-card" href="/blog/balance/">
+          <img src="/images/beach-warrior.webp" alt="" style="display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:2px">
           <h2 style="margin:0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:26px;line-height:1.25;color:#A94F2C">Finding your balance: why steadiness matters more as we get older</h2>
-          <span style="font-size:16px;line-height:1.5">By Selin</span>
-        </li>
+          <span style="font-size:16px;line-height:1.5">Why balance is a skill worth practising at every age, and how yoga helps you feel steadier on your feet.</span>
+          <span class="post-more">Read more <span aria-hidden="true">→</span></span>
+        </a></li>
       </ul>
     </div>
   </section>
