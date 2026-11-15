@@ -26,6 +26,7 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
 @keyframes drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion: reduce){.marquee{animation:none}}
 </style>
+<style>.pv-photo{display:none}@media (min-width:900px){.pv-photo{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px;margin-top:40px}}</style>
 <style>.acuity-frame{display:block;width:100%;height:900px;border:0;background:#F4EDE2;border-radius:2px}@media (max-width:640px){.acuity-frame{height:1150px}}</style>
 <style>.pv-card{display:flex;flex-direction:column;gap:8px;height:100%;box-sizing:border-box;background:#F4EDE2;border-radius:2px;padding:28px 24px;color:#504D42}</style>
 <style>.ws-card{display:flex;flex-direction:column;gap:6px;height:100%;box-sizing:border-box;background:#F4EDE2;border:1.5px solid #F4EDE2;border-radius:2px;padding:28px 24px;color:#504D42;text-decoration:none;transition:border-color .15s ease,transform .15s ease}.ws-card:hover{border-color:#A94F2C;color:#504D42}.ws-card:focus-visible{outline:2px solid #504D42;outline-offset:2px}.ws-cta{margin-top:10px;font-size:16px;font-weight:500;color:#A94F2C;text-decoration:underline;text-underline-offset:4px}@media (prefers-reduced-motion: no-preference){.ws-card:hover{transform:translateY(-2px)}}</style>
@@ -68,17 +69,19 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
   <!-- Private yoga -->
   <section id="private" style="background:#E7C6BD">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-direction:column;gap:48px">
-      <div style="display:flex;flex-wrap:wrap;gap:32px 56px;align-items:center">
+      <div style="display:flex;flex-wrap:wrap;gap:32px 56px;align-items:flex-start">
       <div style="flex:1 1 420px;min-width:0;max-width:40em">
         <h1 style="margin:0 0 12px;font-size:19px;font-weight:500;letter-spacing:0.01em;color:#504D42">Private Yoga</h1>
         <p role="heading" aria-level="2" style="margin:0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:clamp(30px,3.4vw,40px);line-height:1.15;color:#A94F2C">A practice shaped around you.</p>
         <p style="margin:16px 0 0">A one-on-one session with Selin, planned around your body, your goals and how you feel on the day. You get Selin's full attention, so every pose can be adjusted, modified or slowed down just for you.</p>
         <p style="margin:24px 0 0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-size:48px;line-height:1;color:#504D42">$120 <span style="font-family:&quot;Avenir Next&quot;,&quot;DM Sans&quot;,system-ui,sans-serif;font-size:16px">per session</span></p>
         <a class="btn btn-primary" href="#book" style="margin-top:24px">Book a Private Session</a>
+        <img class="pv-photo" src="/images/blocks.webp" alt="Close-up of a low lunge stretch on a mat between two cork yoga blocks">
       </div>
-      <figure style="margin:0;flex:1 1 420px;min-width:0">
-        <img src="/images/blocks.webp" alt="Close-up of a low lunge stretch on a mat between two cork yoga blocks" style="display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:2px">
-      </figure>
+      <div id="book" style="flex:1 1 420px;min-width:0;scroll-margin-top:16px">
+        <iframe class="acuity-frame" src="https://authenticselfhypnotherapy.as.me/?appointmentType=100537471" title="Book a private yoga session with Selin"></iframe>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.5">Calendar not loading? <a href="https://authenticselfhypnotherapy.as.me/?appointmentType=100537471" target="_blank" rel="noopener">Open the booking page in a new tab</a>.</p>
+      </div>
       </div>
       <div>
         <h2 style="margin:0 0 16px;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:clamp(26px,3vw,34px);line-height:1.2;color:#504D42">Why book a private session?</h2>
@@ -108,11 +111,6 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
             <p style="margin:0;font-size:16px;line-height:1.6">Find a time that works around your work, family or shifts, or simply enjoy a quiet hour of practice that is all yours.</p>
           </li>
         </ul>
-      </div>
-      <div id="book" style="scroll-margin-top:16px">
-        <h2 style="margin:0 0 8px;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:clamp(26px,3vw,34px);line-height:1.2;color:#504D42">Book a time</h2>
-        <p style="margin:0 0 16px;font-size:16px;line-height:1.5">Choose a day and time that suits you below. Calendar not loading? <a href="https://authenticselfhypnotherapy.as.me/?appointmentType=100537471" target="_blank" rel="noopener">Open the booking page in a new tab</a>.</p>
-        <iframe class="acuity-frame" src="https://authenticselfhypnotherapy.as.me/?appointmentType=100537471" title="Book a private yoga session with Selin" loading="lazy"></iframe>
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between;border-top:1px solid #A94F2C;padding-top:24px">
         <p style="margin:0;font-size:18px"><span style="font-weight:500">$120 per session</span> · One-on-one with Selin · 2/11 Westland Place, West Ballina</p>
