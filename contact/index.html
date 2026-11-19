@@ -76,11 +76,12 @@ a:focus-visible{outline:2px solid #504D42;outline-offset:2px}
         <h1 style="margin:0 0 12px;font-size:19px;font-weight:500;letter-spacing:0.01em;color:#504D42">Get in Touch</h1>
         <p role="heading" aria-level="2" style="margin:0;font-family:Georgia,&quot;Times New Roman&quot;,serif;font-weight:400;font-size:clamp(30px,3.4vw,40px);line-height:1.15;color:#A94F2C">We would love to hear from you.</p>
         <p style="margin:16px 0 0;max-width:34em">Have a question about classes, private yoga or workshops? Send Selin a message and she will get back to you soon.</p>
-        <form action="https://formsubmit.co/selin@bloomyogaballina.com.au" method="POST" style="margin-top:32px;display:flex;flex-direction:column;gap:16px;background:#F4EDE2;border-radius:2px;padding:28px 24px">
-          <input type="hidden" name="_subject" value="New message from the Bloom Yoga Ballina website">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="https://www.bloomyogaballina.com.au/contact/thanks/">
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <form action="https://api.web3forms.com/submit" method="POST" style="margin-top:32px;display:flex;flex-direction:column;gap:16px;background:#F4EDE2;border-radius:2px;padding:28px 24px">
+          <input type="hidden" name="access_key" value="726bba3d-4e63-4024-a2d5-f0f4caadc490">
+          <input type="hidden" name="subject" value="New message from the Bloom Yoga Ballina website">
+          <input type="hidden" name="from_name" value="Bloom Yoga Ballina website">
+          <input type="hidden" name="redirect" value="https://www.bloomyogaballina.com.au/contact/thanks/">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="cf-row">
             <label class="cf-field">First name<input class="cf-input" type="text" name="First name" autocomplete="given-name" required></label>
             <label class="cf-field">Last name<input class="cf-input" type="text" name="Last name" autocomplete="family-name" required></label>
